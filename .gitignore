@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local/private files
+.env
+*.log
+
+# Generated output
+reports/*.md
+reports/*.json
+!reports/.gitkeep
