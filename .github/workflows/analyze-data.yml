@@ -2,6 +2,22 @@ name: Analyze Data
 
 on:
   workflow_dispatch:
+    inputs:
+      resolve_with_groq:
+        description: "Generate Groq-assisted issue resolution notes"
+        required: false
+        type: boolean
+        default: false
+      groq_model:
+        description: "Groq model to use when Groq resolution is enabled"
+        required: false
+        type: string
+        default: "openai/gpt-oss-20b"
+      analysis_goal:
+        description: "Question or goal to frame the analysis"
+        required: false
+        type: string
+        default: "Find why C drives are filling up and recommend remediation."
   push:
     branches:
       - main
@@ -20,7 +36,15 @@ jobs:
           python-version: "3.12"
 
       - name: Run analyzer
-        run: python data_analyzer.py --input data --output reports
+        if: ${{ !inputs.resolve_with_groq }}
+        run: python data_analyzer.py --input data --output reports --goal "${{ inputs.analysis_goal }}"
+
+      - name: Run analyzer with Groq
+        if: ${{ inputs.resolve_with_groq }}
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ inputs.groq_model }}
+        run: python data_analyzer.py --input data --output reports --resolve-with-groq --goal "${{ inputs.analysis_goal }}"
 
       - name: Upload reports
         uses: actions/upload-artifact@v4
