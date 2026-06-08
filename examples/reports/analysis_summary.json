@@ -1,0 +1,773 @@
+{
+  "files_analyzed": 1,
+  "files": [
+    {
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "file_type": "csv",
+      "records": 5,
+      "fields": [
+        "Computer",
+        "DISM_Status",
+        "DeliveryOptimization_AfterGB",
+        "DeliveryOptimization_BeforeGB",
+        "DeliveryOptimization_RecoveredGB",
+        "DeliveryOptimization_Status",
+        "EndTime",
+        "FreeAfterGB",
+        "FreeBeforeGB",
+        "LiveKernelReports_AfterGB",
+        "LiveKernelReports_BeforeGB",
+        "LiveKernelReports_RecoveredGB",
+        "MemoryDump_AfterGB",
+        "MemoryDump_BeforeGB",
+        "MemoryDump_RecoveredGB",
+        "RecoveredGB",
+        "StartTime",
+        "SystemTemp_AfterGB",
+        "SystemTemp_BeforeGB",
+        "SystemTemp_RecoveredGB",
+        "UserTemp_AfterGB",
+        "UserTemp_BeforeGB",
+        "UserTemp_RecoveredGB",
+        "WindowsErrorReporting_AfterGB",
+        "WindowsErrorReporting_BeforeGB",
+        "WindowsErrorReporting_RecoveredGB",
+        "WindowsTemp_AfterGB",
+        "WindowsTemp_BeforeGB",
+        "WindowsTemp_RecoveredGB"
+      ],
+      "numeric_fields": {
+        "DeliveryOptimization_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.2,
+          "mean": 0.06000000000000001,
+          "median": 0.0
+        },
+        "DeliveryOptimization_BeforeGB": {
+          "count": 5.0,
+          "min": 2.2,
+          "max": 6.1,
+          "mean": 4.41,
+          "median": 4.5
+        },
+        "DeliveryOptimization_RecoveredGB": {
+          "count": 5.0,
+          "min": 2.0,
+          "max": 6.1,
+          "mean": 4.35,
+          "median": 4.5
+        },
+        "FreeAfterGB": {
+          "count": 5.0,
+          "min": 9.45,
+          "max": 60.25,
+          "mean": 31.0,
+          "median": 24.85
+        },
+        "FreeBeforeGB": {
+          "count": 5.0,
+          "min": 6.15,
+          "max": 55.0,
+          "mean": 26.26,
+          "median": 18.25
+        },
+        "LiveKernelReports_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "LiveKernelReports_BeforeGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.5,
+          "mean": 0.1,
+          "median": 0.0
+        },
+        "LiveKernelReports_RecoveredGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.5,
+          "mean": 0.1,
+          "median": 0.0
+        },
+        "MemoryDump_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "MemoryDump_BeforeGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 1.5,
+          "mean": 0.3,
+          "median": 0.0
+        },
+        "MemoryDump_RecoveredGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 1.5,
+          "mean": 0.3,
+          "median": 0.0
+        },
+        "RecoveredGB": {
+          "count": 5.0,
+          "min": -0.35,
+          "max": 6.6,
+          "mean": 4.74,
+          "median": 5.95
+        },
+        "SystemTemp_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "SystemTemp_BeforeGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.6,
+          "mean": 0.22999999999999998,
+          "median": 0.2
+        },
+        "SystemTemp_RecoveredGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.6,
+          "mean": 0.22999999999999998,
+          "median": 0.2
+        },
+        "UserTemp_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 2.25,
+          "mean": 0.55,
+          "median": 0.2
+        },
+        "UserTemp_BeforeGB": {
+          "count": 5.0,
+          "min": 0.8,
+          "max": 3.4,
+          "mean": 2.0300000000000002,
+          "median": 1.8
+        },
+        "UserTemp_RecoveredGB": {
+          "count": 5.0,
+          "min": -0.45,
+          "max": 3.2,
+          "mean": 1.48,
+          "median": 1.25
+        },
+        "WindowsErrorReporting_AfterGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.6,
+          "mean": 0.12,
+          "median": 0.0
+        },
+        "WindowsErrorReporting_BeforeGB": {
+          "count": 5.0,
+          "min": 0.0,
+          "max": 0.1,
+          "mean": 0.032,
+          "median": 0.02
+        },
+        "WindowsErrorReporting_RecoveredGB": {
+          "count": 5.0,
+          "min": -0.56,
+          "max": 0.1,
+          "mean": -0.08800000000000001,
+          "median": 0.0
+        },
+        "WindowsTemp_AfterGB": {
+          "count": 5.0,
+          "min": 0.01,
+          "max": 0.1,
+          "mean": 0.05600000000000001,
+          "median": 0.05
+        },
+        "WindowsTemp_BeforeGB": {
+          "count": 5.0,
+          "min": 0.3,
+          "max": 1.2,
+          "mean": 0.76,
+          "median": 0.8
+        },
+        "WindowsTemp_RecoveredGB": {
+          "count": 5.0,
+          "min": 0.29,
+          "max": 1.1,
+          "mean": 0.704,
+          "median": 0.75
+        }
+      },
+      "top_values": {
+        "Computer": [
+          {
+            "value": "LAB-PC-001",
+            "count": 1
+          },
+          {
+            "value": "LAB-PC-002",
+            "count": 1
+          },
+          {
+            "value": "LAB-PC-003",
+            "count": 1
+          },
+          {
+            "value": "LAB-PC-004",
+            "count": 1
+          },
+          {
+            "value": "LAB-PC-005",
+            "count": 1
+          }
+        ],
+        "DISM_Status": [
+          {
+            "value": "ExitCode_0",
+            "count": 2
+          },
+          {
+            "value": "ExitCode_5",
+            "count": 1
+          },
+          {
+            "value": "ExitCode_-2146498554",
+            "count": 1
+          },
+          {
+            "value": "ExitCode_14098",
+            "count": 1
+          }
+        ],
+        "DeliveryOptimization_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 3
+          },
+          {
+            "value": "0.10",
+            "count": 1
+          },
+          {
+            "value": "0.20",
+            "count": 1
+          }
+        ],
+        "DeliveryOptimization_BeforeGB": [
+          {
+            "value": "5.50",
+            "count": 1
+          },
+          {
+            "value": "6.10",
+            "count": 1
+          },
+          {
+            "value": "2.20",
+            "count": 1
+          },
+          {
+            "value": "4.50",
+            "count": 1
+          },
+          {
+            "value": "3.75",
+            "count": 1
+          }
+        ],
+        "DeliveryOptimization_RecoveredGB": [
+          {
+            "value": "5.40",
+            "count": 1
+          },
+          {
+            "value": "6.10",
+            "count": 1
+          },
+          {
+            "value": "2.00",
+            "count": 1
+          },
+          {
+            "value": "4.50",
+            "count": 1
+          },
+          {
+            "value": "3.75",
+            "count": 1
+          }
+        ],
+        "DeliveryOptimization_Status": [
+          {
+            "value": "Success",
+            "count": 5
+          }
+        ],
+        "EndTime": [
+          {
+            "value": "2026-06-08T08:07:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:17:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:30:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:40:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:52:00",
+            "count": 1
+          }
+        ],
+        "FreeAfterGB": [
+          {
+            "value": "48.35",
+            "count": 1
+          },
+          {
+            "value": "24.85",
+            "count": 1
+          },
+          {
+            "value": "9.45",
+            "count": 1
+          },
+          {
+            "value": "12.10",
+            "count": 1
+          },
+          {
+            "value": "60.25",
+            "count": 1
+          }
+        ],
+        "FreeBeforeGB": [
+          {
+            "value": "42.10",
+            "count": 1
+          },
+          {
+            "value": "18.25",
+            "count": 1
+          },
+          {
+            "value": "9.80",
+            "count": 1
+          },
+          {
+            "value": "6.15",
+            "count": 1
+          },
+          {
+            "value": "55.00",
+            "count": 1
+          }
+        ],
+        "LiveKernelReports_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 5
+          }
+        ],
+        "LiveKernelReports_BeforeGB": [
+          {
+            "value": "0.00",
+            "count": 4
+          },
+          {
+            "value": "0.50",
+            "count": 1
+          }
+        ],
+        "LiveKernelReports_RecoveredGB": [
+          {
+            "value": "0.00",
+            "count": 4
+          },
+          {
+            "value": "0.50",
+            "count": 1
+          }
+        ],
+        "MemoryDump_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 5
+          }
+        ],
+        "MemoryDump_BeforeGB": [
+          {
+            "value": "0.00",
+            "count": 4
+          },
+          {
+            "value": "1.50",
+            "count": 1
+          }
+        ],
+        "MemoryDump_RecoveredGB": [
+          {
+            "value": "0.00",
+            "count": 4
+          },
+          {
+            "value": "1.50",
+            "count": 1
+          }
+        ],
+        "RecoveredGB": [
+          {
+            "value": "6.25",
+            "count": 1
+          },
+          {
+            "value": "6.60",
+            "count": 1
+          },
+          {
+            "value": "-0.35",
+            "count": 1
+          },
+          {
+            "value": "5.95",
+            "count": 1
+          },
+          {
+            "value": "5.25",
+            "count": 1
+          }
+        ],
+        "StartTime": [
+          {
+            "value": "2026-06-08T08:00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:10:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:20:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:32:00",
+            "count": 1
+          },
+          {
+            "value": "2026-06-08T08:45:00",
+            "count": 1
+          }
+        ],
+        "SystemTemp_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 5
+          }
+        ],
+        "SystemTemp_BeforeGB": [
+          {
+            "value": "0.60",
+            "count": 1
+          },
+          {
+            "value": "0.20",
+            "count": 1
+          },
+          {
+            "value": "0.10",
+            "count": 1
+          },
+          {
+            "value": "0.00",
+            "count": 1
+          },
+          {
+            "value": "0.25",
+            "count": 1
+          }
+        ],
+        "SystemTemp_RecoveredGB": [
+          {
+            "value": "0.60",
+            "count": 1
+          },
+          {
+            "value": "0.20",
+            "count": 1
+          },
+          {
+            "value": "0.10",
+            "count": 1
+          },
+          {
+            "value": "0.00",
+            "count": 1
+          },
+          {
+            "value": "0.25",
+            "count": 1
+          }
+        ],
+        "UserTemp_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 2
+          },
+          {
+            "value": "0.20",
+            "count": 1
+          },
+          {
+            "value": "0.30",
+            "count": 1
+          },
+          {
+            "value": "2.25",
+            "count": 1
+          }
+        ],
+        "UserTemp_BeforeGB": [
+          {
+            "value": "3.40",
+            "count": 1
+          },
+          {
+            "value": "2.90",
+            "count": 1
+          },
+          {
+            "value": "1.80",
+            "count": 1
+          },
+          {
+            "value": "1.25",
+            "count": 1
+          },
+          {
+            "value": "0.80",
+            "count": 1
+          }
+        ],
+        "UserTemp_RecoveredGB": [
+          {
+            "value": "3.20",
+            "count": 1
+          },
+          {
+            "value": "2.60",
+            "count": 1
+          },
+          {
+            "value": "-0.45",
+            "count": 1
+          },
+          {
+            "value": "1.25",
+            "count": 1
+          },
+          {
+            "value": "0.80",
+            "count": 1
+          }
+        ],
+        "WindowsErrorReporting_AfterGB": [
+          {
+            "value": "0.00",
+            "count": 4
+          },
+          {
+            "value": "0.60",
+            "count": 1
+          }
+        ],
+        "WindowsErrorReporting_BeforeGB": [
+          {
+            "value": "0.00",
+            "count": 2
+          },
+          {
+            "value": "0.10",
+            "count": 1
+          },
+          {
+            "value": "0.02",
+            "count": 1
+          },
+          {
+            "value": "0.04",
+            "count": 1
+          }
+        ],
+        "WindowsErrorReporting_RecoveredGB": [
+          {
+            "value": "0.00",
+            "count": 2
+          },
+          {
+            "value": "0.10",
+            "count": 1
+          },
+          {
+            "value": "0.02",
+            "count": 1
+          },
+          {
+            "value": "-0.56",
+            "count": 1
+          }
+        ],
+        "WindowsTemp_AfterGB": [
+          {
+            "value": "0.10",
+            "count": 2
+          },
+          {
+            "value": "0.05",
+            "count": 1
+          },
+          {
+            "value": "0.01",
+            "count": 1
+          },
+          {
+            "value": "0.02",
+            "count": 1
+          }
+        ],
+        "WindowsTemp_BeforeGB": [
+          {
+            "value": "1.20",
+            "count": 1
+          },
+          {
+            "value": "0.80",
+            "count": 1
+          },
+          {
+            "value": "0.50",
+            "count": 1
+          },
+          {
+            "value": "0.30",
+            "count": 1
+          },
+          {
+            "value": "1.00",
+            "count": 1
+          }
+        ],
+        "WindowsTemp_RecoveredGB": [
+          {
+            "value": "1.10",
+            "count": 1
+          },
+          {
+            "value": "0.75",
+            "count": 1
+          },
+          {
+            "value": "0.40",
+            "count": 1
+          },
+          {
+            "value": "0.29",
+            "count": 1
+          },
+          {
+            "value": "0.98",
+            "count": 1
+          }
+        ]
+      },
+      "notes": []
+    }
+  ],
+  "issues_found": 4,
+  "analysis_goal": "Find why C drives are filling up and recommend remediation.",
+  "issues": [
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.35."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_usertemp_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`UserTemp_RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.45."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `UserTemp_RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_windowserrorreporting_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`WindowsErrorReporting_RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.56."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `WindowsErrorReporting_RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_dism_status_non_success_status_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`DISM_Status` has non-success status values",
+      "evidence": [
+        "Non-success values: ExitCode_5 (1), ExitCode_-2146498554 (1), ExitCode_14098 (1)."
+      ],
+      "local_recommendation": "Review the affected records, group them by failure reason, and rerun the operation after correcting access, service, or script errors.",
+      "action_plan": [
+        "Filter `DISM_Status` to the non-success values listed in the evidence.",
+        "Group affected records by status code and failure message if available.",
+        "Resolve the highest-count failure group first.",
+        "Rerun the source operation for affected records.",
+        "Rerun the analyzer and confirm the non-success count is reduced or cleared."
+      ],
+      "ai_resolution": null
+    }
+  ]
+}

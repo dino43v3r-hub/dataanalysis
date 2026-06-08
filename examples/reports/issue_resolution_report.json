@@ -1,0 +1,74 @@
+{
+  "analysis_goal": "Find why C drives are filling up and recommend remediation.",
+  "issues": [
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.35."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_usertemp_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`UserTemp_RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.45."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `UserTemp_RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_windowserrorreporting_recoveredgb_negative_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`WindowsErrorReporting_RecoveredGB` contains negative values",
+      "evidence": [
+        "Minimum value is -0.56."
+      ],
+      "local_recommendation": "Verify whether negative values are valid for this measure or correct the source data.",
+      "action_plan": [
+        "Filter `WindowsErrorReporting_RecoveredGB` for values below 0 and identify the affected records.",
+        "Compare before/after source measurements for those records.",
+        "Fix collection math, timing drift, or source values if negative recovery is invalid.",
+        "Rerun the operation for affected records and confirm the minimum value is 0 or higher."
+      ],
+      "ai_resolution": null
+    },
+    {
+      "issue_id": "examples_data_disk_maintenance_sample_csv_dism_status_non_success_status_values",
+      "path": "examples\\data\\disk_maintenance_sample.csv",
+      "severity": "medium",
+      "title": "`DISM_Status` has non-success status values",
+      "evidence": [
+        "Non-success values: ExitCode_5 (1), ExitCode_-2146498554 (1), ExitCode_14098 (1)."
+      ],
+      "local_recommendation": "Review the affected records, group them by failure reason, and rerun the operation after correcting access, service, or script errors.",
+      "action_plan": [
+        "Filter `DISM_Status` to the non-success values listed in the evidence.",
+        "Group affected records by status code and failure message if available.",
+        "Resolve the highest-count failure group first.",
+        "Rerun the source operation for affected records.",
+        "Rerun the analyzer and confirm the non-success count is reduced or cleared."
+      ],
+      "ai_resolution": null
+    }
+  ]
+}

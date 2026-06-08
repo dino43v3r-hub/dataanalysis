@@ -84,6 +84,19 @@ used by other tools or future automation. The issue-resolution report includes
 locally generated recommendations by default and Groq-generated resolution notes
 when `--resolve-with-groq` is enabled.
 
+## Sanitized Examples
+
+The `examples/` folder contains a fake disk-maintenance CSV and generated sample
+reports. These examples are safe to commit because they use synthetic machine
+names and do not contain real operational paths, hostnames, API keys, or private
+report output.
+
+Regenerate the sample reports with:
+
+```powershell
+python data_analyzer.py --input examples\data\disk_maintenance_sample.csv --output examples\reports --goal "Find why C drives are filling up and recommend remediation."
+```
+
 ## GitHub Actions
 
 The included workflow runs the analyzer whenever changes are pushed to `main`
