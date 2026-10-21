@@ -22,32 +22,41 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ANALYSIS_GOAL: ${{ inputs.analysis_goal }}
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
 
       - name: Run analyzer
         if: ${{ !inputs.resolve_with_groq }}
-        run: python data_analyzer.py --input data --output reports --goal "${{ inputs.analysis_goal }}"
+        run: python data_analyzer.py --input data --output reports --goal "$ANALYSIS_GOAL"
 
       - name: Run analyzer with Groq
         if: ${{ inputs.resolve_with_groq }}
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ inputs.groq_model }}
-        run: python data_analyzer.py --input data --output reports --resolve-with-groq --goal "${{ inputs.analysis_goal }}"
+        run: python data_analyzer.py --input data --output reports --resolve-with-groq --goal "$ANALYSIS_GOAL"
 
       - name: Upload reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: analysis-reports
           path: reports/
+          retention-days: 7
